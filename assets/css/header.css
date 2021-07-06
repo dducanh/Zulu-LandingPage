@@ -1,0 +1,83 @@
+/*----------------------------------------------------------*/
+/*-----------------------STYLE-HEADER-----------------------*/
+/*----------------------------------------------------------*/
+
+.header{
+    padding-top: 43px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo{
+    display: inline-block;
+    margin-right: 180px;
+}
+
+.header-menu{
+    display: flex;
+    align-items: center;
+}
+
+.header-menu-item:not(:first-child){
+    margin-left: 75px;
+}
+
+.header-menu-link{
+    color: var(--color-gray-dark);
+    transition: color 0.25s ease-in-out;
+}
+
+.header-menu-link:hover{
+    color: var(--primary-color);
+}
+
+.header-authen{
+    margin-left: auto;
+}
+
+
+.button-primary{
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+/*----------------------------------------------------------*/
+/*-----------------------RESPONSIVE-HEADER------------------*/
+/*----------------------------------------------------------*/
+
+
+@media screen and (max-width:1279px) {
+    .header-logo{
+        margin-right: 0;
+
+    }
+
+    .header-menu{
+        margin: 0 auto;
+    }
+
+    .header-authen{
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    .header-menu{
+        display: none;
+    }
+
+    .header-authen{
+        margin-left: auto;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .header-logo-image{
+        max-width: 90px;
+    }
+    .header{
+        padding-top: 20px;
+    }
+}

@@ -1,0 +1,44 @@
+.started{
+    max-width: 900px;
+    margin: 200px auto 70px;
+    border-radius: 30px;
+    background-color: #fbfbfb;
+    position: relative;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.started-caption{
+    margin-bottom: 20px;
+}
+
+.started-heading{
+    margin-bottom: 30px;
+}
+
+.started-desc{
+    max-width: 245px;
+    margin-bottom: 50px;
+}
+
+.started-btn{
+    width: max-content;
+}
+
+.started-comment{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.started-smile{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%,-50%);
+}
+
+

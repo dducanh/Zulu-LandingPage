@@ -1,0 +1,151 @@
+.intro{
+    display: flex;
+    align-items: center;
+    padding: 110px 0 160px;
+}
+
+.intro > *{
+    width: 50%;
+}
+
+.intro-content{
+    padding-right: 130px;
+}
+
+.intro-desc{
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.plan-list{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.plan-item{
+    border: 1px solid #eee;
+    border-radius: 20px;
+    width: 33.33%;
+    padding: 75px 25px;
+    width: calc(33.33% - 30px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.25s linear;
+}
+
+.plan-item:hover{
+    border-color: transparent;
+    box-shadow: 0 0 40px 10px rgba(0,0,0,0.03);
+}
+
+.plan-item:hover .plan-start{
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.plan-name{
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.plan-price{
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.plan-symbol{
+    vertical-align: top;
+}
+
+.plan-month{
+    font-size: 30px;
+}
+
+.plan-desc{
+    margin-bottom: 55px;
+}
+
+.plan-feature{
+    font-size: 20px;
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+
+.plan-feature-title{
+    color: var(--gray);
+}
+
+.plan-feature-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.plan-feature-item:last-of-type{
+    margin-bottom: 75px;
+}
+
+.plan-feature-icon{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.plan-start{
+    margin:auto auto 0;
+    display: block;
+    width: max-content;
+    transition: all 0.25s linear;
+    text-transform: capitalize;
+}
+
+.plan-label{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    background-color: var(--pink);
+    color: white;
+    text-transform: capitalize;
+    border-radius: 0 20px 0 20px;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .intro-content{
+        padding-right: 20px;
+    }
+
+    .plan-list{
+        display: block;
+    }
+
+    .plan-item{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .intro{
+        padding: 25px 0 80px;
+        display: inline-block;
+    }
+
+    .intro > *{
+        width: 100%;
+        padding: 0;
+    }
+    .intro-content{
+        margin-bottom: 35px;
+    }
+}
